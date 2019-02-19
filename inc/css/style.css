@@ -1,0 +1,21 @@
+body{
+    background: #6c757d !important;
+    background-image: url("../../photo/backgroundTeeShirt.jpg");   
+}
+
+.mon-conteneur{
+    min-height: 750px; 
+
+}
+
+html {
+    font-size: 1rem;
+}
+
+.navbar{
+    border-bottom: 0.1rem solid #2c2c2c;
+}
+  
+footer{
+    border-top: 0.1rem solid #2c2c2c;
+}

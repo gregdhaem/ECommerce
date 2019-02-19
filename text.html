@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <h2><?= $_SESSION['membre']['pseudo']?> Bienvenu sur votre page profil</h2>
+
+        <div class="col-md-7 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Profil du Greg's Tee Shopper</h4>
+                </div>
+                <div class="panel-body">
+
+                    <div class="box box-info">
+
+                        <div class="box-body">
+                            <div class="col-sm-6">
+                                <div align="center">
+                                    <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"
+                                        id="profile-image1" class="img-circle img-responsive">
+
+                                    <input id="profile-image-upload" class="hidden" type="file">
+                                    <div style="color:#999;">Cliquez ici pour changer votre avatar</div>
+                                    <!--Upload Image Js And Css-->
+                                </div>
+                                <br>
+                                <!-- /input-group -->
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 style="color:#00b1b1;"><?= $_SESSION['membre']['prenom']?> <?= $_SESSION['membre']['nom']?> </h4>
+                                </span>
+                                <span>
+                                    <p>Shopper</p>
+                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr style="margin:5px 0 5px 0;">
+
+
+                            <div class="col-sm-5 col-xs-6 tital ">Nom :</div>
+                            <div class="col-sm-7 col-xs-6 "><?= $_SESSION['membre']['nom']?></div>
+
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+
+                            <div class="col-sm-5 col-xs-6 tital ">Prénom :</div>
+                            <div class="col-sm-7"> <?= $_SESSION['membre']['prenom']?></div>
+
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+
+                            <div class="col-sm-5 col-xs-6 tital ">Adresse :</div>
+                            <div class="col-sm-7"><?= $_SESSION['membre']['adresse']?></div>
+
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+
+                            <div class="col-sm-5 col-xs-6 tital ">Code Postal :</div>
+                            <div class="col-sm-7"><?= $_SESSION['membre']['code_postal']?></div>
+
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+
+                            <div class="col-sm-5 col-xs-6 tital ">Ville :</div>
+                            <div class="col-sm-7"><?= $_SESSION['membre']['ville']?></div>
+
+                            <div class="clearfix"></div>
+                            <div class="bot-border"></div>
+
+                            <!-- /.box-body -->
+                        </div>
+                        <!-- /.box -->
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('#profile-image1').on('click', function () {
+                    $('#profile-image-upload').click();
+                });
+            });
+        </script>
+
+
+    </div>
+</div>
